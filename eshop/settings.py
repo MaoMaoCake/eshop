@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pages',
+    'products',
 ]
 
 MIDDLEWARE = [
