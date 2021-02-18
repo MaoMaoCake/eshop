@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 def home_page_view(request, *args, **kwargs):
     print(request.user)
-    return render(request, "home.html", {})
+    return render(request, "home-page.html", {})
 
 
 def about_page_view(request, *args, **kwargs):
