@@ -19,7 +19,9 @@ import pages.views as page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', page.home_page_view, name='home'),
-    path('about/', page.about_page_view, name='home'),
-    path('contact/', page.contact_page_view, name='home'),
+    path('about/', page.about_page_view, name='about'),
+    path('contact/', page.contact_page_view, name='contact'),
+    path('products/', page.product_page_view, name='product'),
+    path('gallery/', page.gallery_page_view, name='gallery'),
     path('accounts/', include('allauth.urls')),
 ]

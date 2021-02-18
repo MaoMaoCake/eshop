@@ -3,7 +3,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+      <a class="navbar-brand waves-effect" href="/">
         <strong class="blue-text">Infiniti</strong>
       </a>
 
@@ -15,24 +15,25 @@
 
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#">Home
+          <li class="nav-item {% if nbar == 'home' %}active{% endif %}">
+            <a class="nav-link waves-effect" href="/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
+          <li class="nav-item {% if nbar == 'about' %}active{% endif %}">
+            <a class="nav-link waves-effect" href="/about">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-              target="_blank">Free download</a>
+          <li class="nav-item {% if nbar == 'product' %}active{% endif %}">
+            <a class="nav-link waves-effect" href="/products">
+                Products
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free
-              tutorials</a>
+          <li class="nav-item {% if nbar == 'gallery' %}active{% endif %}">
+            <a class="nav-link waves-effect" href="/gallery" >Product Gallery</a>
           </li>
         </ul>
 
@@ -46,19 +47,19 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+            <a href="https://www.facebook.com" class="nav-link waves-effect" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+            <a href="https://twitter.com" class="nav-link waves-effect" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
+            <a href="/contact" class="nav-link border border-light rounded waves-effect"
               target="_blank">
-              <i class="fab fa-github mr-2"></i>MDB GitHub
+              <i class="fab fa-github mr-2"></i>Contact Us!
             </a>
           </li>
         </ul>
